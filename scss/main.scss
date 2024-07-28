@@ -18,28 +18,33 @@
 .cookie-banner {
   --color1: #10182F;
   --color2: #fff;
+  --color3: #306BF3;
   box-shadow: 0 15px 45px -12px rgba(#001D93, .15); //X düzlemi Y düzlemi Blur Spread ve renk
+  background: var(--color2);
+
+  p {
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--color1);
+
+    a {
+      display: block;
+      text-decoration: underline;
+      color: var(--color1);
+    }
+  }
+
+  &.dark {
+    --color1: #fff;
+    --color2: #10182F;
+    --color3:#fff;
+  }
 
   &.style1 {
     width: 410px;
     height: 196px;
     border-radius: 5px;
     padding: 35px 35px 25px;
-    background: var(--color2);
-
-
-
-    p {
-      font-size: 16px;
-      line-height: 25px;
-      color: var(--color1);
-
-      a {
-        display: block;
-        text-decoration: underline;
-        color: var(--color1);
-      }
-    }
 
     .actions {
       display: flex;
@@ -66,10 +71,40 @@
     }
   }
 
-  &.dark {
-    --color1: #fff;
-    --color2: #10182F;
-  }
+  &.style2 {
+    width: 410px;
+    height: 304px;
+    display: flex;
+    flex-direction: column;
+    padding: 39px 40px 35px; // iç üst boşluk 39px iç sağ ve sol boşluk 40px iç alt boşluk 35px
+    justify-content: space-between;
 
+    .icon {
+      text-align: center;
+      fill: var(--color3);
+    }
+
+    p {
+      text-align: center;
+    }
+
+
+    .actions {
+      text-align: center;
+
+      a {
+        height: 50px;
+        display: inline-block;
+        width: 110px;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        color: var(--color2);
+        line-height: 50px;
+        background-color: var(--color1);
+      }
+    }
+
+  }
 
 }

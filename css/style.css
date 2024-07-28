@@ -14,7 +14,8 @@
 }
 
 .cookie-banner {
-  background: #fff;
+  --color1: #10182F;
+  --color2: #fff;
   box-shadow: 0 15px 45px -12px rgba(0, 29, 147, 0.15);
 }
 .cookie-banner.style1 {
@@ -22,6 +23,41 @@
   height: 196px;
   border-radius: 5px;
   padding: 35px 35px 25px;
+  background: var(--color2);
+}
+.cookie-banner.style1 p {
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--color1);
+}
+.cookie-banner.style1 p a {
+  display: block;
+  text-decoration: underline;
+  color: var(--color1);
+}
+.cookie-banner.style1 .actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 25px;
+}
+.cookie-banner.style1 .actions a {
+  height: 36px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--color1);
+  width: 132px;
+}
+.cookie-banner.style1 .actions a.btn {
+  background-color: var(--color1);
+  color: var(--color2);
+}
+.cookie-banner.dark {
+  --color1: #fff;
+  --color2: #10182F;
 }
 
 /*# sourceMappingURL=style.css.map */

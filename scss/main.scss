@@ -37,7 +37,7 @@
   &.dark {
     --color1: #fff;
     --color2: #10182F;
-    --color3:#fff;
+    --color3: #fff;
   }
 
   &.style1 {
@@ -105,6 +105,32 @@
       }
     }
 
+    &.vertical {
+      flex-direction: row;
+      width: 731px;
+      height: 145px;
+      align-items: center;
+      padding:0 35px ; //üst alt 0 sağ sol 35
+      justify-content: normal;
+
+      .icon {
+        margin-left: 5px;
+        margin-right: 45px;
+        text-align: center;
+      }
+
+      p {
+        max-width: 330px;
+        text-align: left;
+      }
+
+      .actions {
+        margin-left: auto;
+      }
+    }
   }
 
+  &.position{
+position: fixed;
+  }
 }

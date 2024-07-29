@@ -33,7 +33,7 @@
 .cookie-banner.dark {
   --color1: #fff;
   --color2: #10182F;
-  --color3:#fff;
+  --color3: #fff;
 }
 .cookie-banner.style1 {
   width: 410px;
@@ -89,6 +89,29 @@
   color: var(--color2);
   line-height: 50px;
   background-color: var(--color1);
+}
+.cookie-banner.style2.vertical {
+  flex-direction: row;
+  width: 731px;
+  height: 145px;
+  align-items: center;
+  padding: 0 35px;
+  justify-content: normal;
+}
+.cookie-banner.style2.vertical .icon {
+  margin-left: 5px;
+  margin-right: 45px;
+  text-align: center;
+}
+.cookie-banner.style2.vertical p {
+  max-width: 330px;
+  text-align: left;
+}
+.cookie-banner.style2.vertical .actions {
+  margin-left: auto;
+}
+.cookie-banner.position {
+  position: fixed;
 }
 
 /*# sourceMappingURL=style.css.map */

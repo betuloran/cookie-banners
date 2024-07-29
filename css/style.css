@@ -19,6 +19,18 @@
   --color3: #306BF3;
   box-shadow: 0 15px 45px -12px rgba(0, 29, 147, 0.15);
   background: var(--color2);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.8);
+  transition: 500ms all;
+}
+.cookie-banner.active {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+.cookie-banner.active.position-bc, .cookie-banner.active.position-tc {
+  transform: translateX(-50%) scale(1) !important;
 }
 .cookie-banner p {
   font-size: 16px;
@@ -110,7 +122,36 @@
 .cookie-banner.style2.vertical .actions {
   margin-left: auto;
 }
-.cookie-banner.position {
+.cookie-banner.position-tr {
+  top: 20px;
+  right: 20px;
+  position: fixed;
+}
+.cookie-banner.position-tl {
+  top: 20px;
+  left: 20px;
+  position: fixed;
+}
+.cookie-banner.position-tc {
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%) scale(0.8);
+  position: fixed;
+}
+.cookie-banner.position-br {
+  bottom: 20px;
+  right: 20px;
+  position: fixed;
+}
+.cookie-banner.position-bl {
+  bottom: 20px;
+  left: 20px;
+  position: fixed;
+}
+.cookie-banner.position-bc {
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) scale(0.8);
   position: fixed;
 }
 

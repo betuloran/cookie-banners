@@ -21,7 +21,19 @@
   --color3: #306BF3;
   box-shadow: 0 15px 45px -12px rgba(#001D93, .15); //X düzlemi Y düzlemi Blur Spread ve renk
   background: var(--color2);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(.8);
+  transition: 500ms all;
 
+  &.active{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    &.position-bc, &.position-tc{
+transform: translateX(-50%) scale(1) !important;
+    }
+  }
   p {
     font-size: 16px;
     line-height: 25px;
@@ -131,6 +143,40 @@
   }
 
   &.position{
-position: fixed;
+&-tr{
+  top: 20px;
+  right: 20px;
+  position: fixed;
+}
+&-tl{
+  top: 20px;
+  left: 20px;
+  position: fixed;
+}
+&-tc{
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%) scale(.8);
+  position: fixed;
+}
+
+&-br{
+  bottom: 20px;
+  right: 20px;
+  position: fixed;
+}
+&-bl{
+  bottom: 20px;
+  left: 20px;
+  position: fixed;
+}
+&-bc{
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) scale(.8);
+  position: fixed;
+}
+
   }
+  
 }

@@ -15,6 +15,10 @@
   }
 }
 
+body {
+  background-color: #F7F8FC;
+}
+
 .cookie-banner {
   --color1: #10182F;
   --color2: #fff;
@@ -26,14 +30,17 @@
   transform: scale(.8);
   transition: 500ms all;
 
-  &.active{
+  &.active {
     opacity: 1;
     visibility: visible;
     transform: scale(1);
-    &.position-bc, &.position-tc{
-transform: translateX(-50%) scale(1) !important;
+
+    &.position-bc,
+    &.position-tc {
+      transform: translateX(-50%) scale(1) !important;
     }
   }
+
   p {
     font-size: 16px;
     line-height: 25px;
@@ -122,7 +129,7 @@ transform: translateX(-50%) scale(1) !important;
       width: 731px;
       height: 145px;
       align-items: center;
-      padding:0 35px ; //üst alt 0 sağ sol 35
+      padding: 0 35px; //üst alt 0 sağ sol 35
       justify-content: normal;
 
       .icon {
@@ -142,41 +149,45 @@ transform: translateX(-50%) scale(1) !important;
     }
   }
 
-  &.position{
-&-tr{
-  top: 20px;
-  right: 20px;
-  position: fixed;
-}
-&-tl{
-  top: 20px;
-  left: 20px;
-  position: fixed;
-}
-&-tc{
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%) scale(.8);
-  position: fixed;
-}
+  &.position {
+    &-tr {
+      top: 20px;
+      right: 20px;
+      position: fixed;
+    }
 
-&-br{
-  bottom: 20px;
-  right: 20px;
-  position: fixed;
-}
-&-bl{
-  bottom: 20px;
-  left: 20px;
-  position: fixed;
-}
-&-bc{
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%) scale(.8);
-  position: fixed;
-}
+    &-tl {
+      top: 20px;
+      left: 20px;
+      position: fixed;
+    }
+
+    &-tc {
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%) scale(.8);
+      position: fixed;
+    }
+
+    &-br {
+      bottom: 20px;
+      right: 20px;
+      position: fixed;
+    }
+
+    &-bl {
+      bottom: 20px;
+      left: 20px;
+      position: fixed;
+    }
+
+    &-bc {
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%) scale(.8);
+      position: fixed;
+    }
 
   }
-  
+
 }
